@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="590.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Game">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="584.0" prefWidth="823.0" VBox.vgrow="ALWAYS">
+      <children>
+            <AnchorPane layoutX="805.0" layoutY="-1.0" prefHeight="590.0" prefWidth="155.0">
+               <children>
+                  <Label layoutX="7.0" layoutY="126.0" prefHeight="39.0" prefWidth="55.0" text="1. Player">
+                     <font>
+                        <Font name="BERNIER™ REGULAR" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="score1" disable="true" editable="false" layoutY="165.0" />
+                  <TextField fx:id="score2" disable="true" editable="false" layoutY="270.0" />
+                  <Label layoutX="9.0" layoutY="243.0" text="2. Player">
+                     <font>
+                        <Font name="BERNIER™ REGULAR" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="47.0" layoutY="39.0" text="Scores">
+                     <font>
+                        <Font name="BERNIER™ REGULAR" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Canvas fx:id="canwas" height="589.0" width="802.0" />
+      </children>
+         <effect>
+            <Blend />
+         </effect>
+    </AnchorPane>
+  </children>
+</VBox>

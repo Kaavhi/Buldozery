@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="519.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="519.0" prefWidth="924.0" VBox.vgrow="ALWAYS">
+      <children>
+            <ImageView fitHeight="519.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../start2.png" />
+               </image>
+            </ImageView>
+            <AmbientLight color="CHARTREUSE" layoutX="14.0" layoutY="22.0" lightOn="true" />
+            <Canvas fx:id="canwas" height="519.0" width="847.0" />
+            <Button fx:id="start" layoutX="422.0" layoutY="330.0" mnemonicParsing="false" onAction="#startGame" prefHeight="49.0" prefWidth="109.0" text="START">
+               <effect>
+                  <Bloom threshold="0.93" />
+               </effect>
+               <font>
+                  <Font name="Chiller" size="25.0" />
+               </font>
+            </Button>
+      </children>
+         <effect>
+            <Blend />
+         </effect>
+    </AnchorPane>
+  </children>
+</VBox>
